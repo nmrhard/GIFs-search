@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Test task giphy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">GIFs</h1>
+      <div class="actions">
+        <form class="actions__search search-form">
+          <fieldset class="search-form__group">
+            <input class="search-form__input" type="search" placeholder="Search for GIFs">
+            <button class="search-form__submit button" type="submit">Go</button>
+          </fieldset>
+        </form>
+        <button class="button refresh-button" type="button">New GIFs</button>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="container">
+      <section class="photos">
+        <ul class="photos-list">
+        </ul>
+      </section>
+    </div>
+  </main>
+  <template id="photo">
+    <li class="photos-list__item">
+      <img class="photos-list__image" width="229" height="200"  src="" alt="">
+      <div class="photo-list__descr">
+        <span class="photo-list__text"></span>
+        <button class="photo-list__action" type="button">i</button>
+      </div>
+      <div class="photos-list__overlay">
+        <span class="photos-list__resolution">480 x 480</span>
+        <a class="photos-list__link">Оригинал</a>
+      </div>
+    </li>
+  </template>
+  <script src="js/util.min.js"></script>
+  <script src="js/backend.min.js"></script>
+  <script src="js/info.min.js"></script>
+  <script src="js/photo.min.js"></script>
+  <script src="js/init.min.js"></script>
+  <script src="js/debounce.min.js"></script>
+  <script src="js/search.min.js"></script>
+  <script src="js/refresh.min.js"></script>
+</body>
+</html>
