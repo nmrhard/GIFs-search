@@ -48,6 +48,7 @@
     "node": "8.16"
   },
   "dependencies": {
+    "deep-extend": "^0.6.0",
     "merge": "^1.2.1"
   }
 }
